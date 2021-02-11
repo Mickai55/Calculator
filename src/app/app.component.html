@@ -1,0 +1,77 @@
+<div class="main2">
+  <div class="main">
+    <input [(ngModel)]="calcHistory" *ngIf="calcHistory" class="form-control calcHistory" />
+    <input [(ngModel)]="screen" class="form-control" />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 digits operators" (click)="clear()"> 
+          clear
+        </div>
+        <div class="col-3 digits operators" (click)="square()"> 
+          x²
+        </div>
+        <div class="col-3 digits operators" (click)="plus()"> 
+          +
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 digits" (click)="digit7()"> 
+          7
+        </div>
+        <div class="col-3 digits" (click)="digit8()"> 
+          8
+        </div>
+        <div class="col-3 digits" (click)="digit9()"> 
+          9
+        </div>
+        <div class="col-3 digits operators" (click)="minus()"> 
+          -
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 digits" (click)="digit4()"> 
+          4
+        </div>
+        <div class="col-3 digits" (click)="digit5()"> 
+          5
+        </div>
+        <div class="col-3 digits" (click)="digit6()"> 
+          6
+        </div>
+        <div class="col-3 digits operators" (click)="multiply()"> 
+          ×
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 digits" (click)="digit1()"> 
+          1
+        </div>
+        <div class="col-3 digits" (click)="digit2()"> 
+          2
+        </div>
+        <div class="col-3 digits" (click)="digit3()"> 
+          3
+        </div>
+        <div class="col-3 digits operators" (click)="divide()"> 
+          ÷
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 digits operators" (click)="negate()"> 
+          +/-
+        </div>
+        <div class="col-3 digits" (click)="digit0()">  
+          0
+        </div>
+        <div class="col-3 digits operators" (click)="floatingPointF()"> 
+          .
+        </div>
+        <div class="col-3 digits operators" (click)="equal()"> 
+          =
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
